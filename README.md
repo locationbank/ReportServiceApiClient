@@ -12,13 +12,12 @@ Sections
 # 1 Base API Url
 
 All endpoints described in this document with the exception of Reporting have the following base API url:
-https://locationbank.net/reportingservice/api
-
+https://api.locationbank.net/reportsvc/
 # 2 Facebook Analytics
 
 * Http Verb: GET
 * Headers: Content-Type: application/json
-* Http EndPoint: /Analytics/Facebook  https://locationbank.net/reportingservice/api/)
+* Http EndPoint: /Analytics/Facebook  https://api.locationbank.net/reportsvc/
 
 **QueryString Parameters:**
 
@@ -60,7 +59,7 @@ https://locationbank.net/reportingservice/api
 
 * Http Verb: GET
 * Headers: Content-Type: application/json
-* Http EndPoint: /Analytics/Google  https://locationbank.net/reportingservice/api/)
+* Http EndPoint: /Analytics/Google  https://api.locationbank.net/reportsvc/
 
 **QueryString Parameters:**
 
@@ -103,7 +102,7 @@ https://locationbank.net/reportingservice/api
 
 * Http Verb: GET
 * Headers: Content-Type: application/json
-* Http EndPoint: /Analytics/Yelp  https://locationbank.net/reportingservice/api/)
+* Http EndPoint: /Analytics/Yelp  https://api.locationbank.net/reportsvc/
 
 **QueryString Parameters:**
 
@@ -140,7 +139,7 @@ https://locationbank.net/reportingservice/api
 
 * Http Verb: GET
 * Headers: Content-Type: application/json
-* Http EndPoint: /Analytics/GmbMedia  https://locationbank.net/reportingservice/api/)
+* Http EndPoint: /Analytics/GmbMedia  https://api.locationbank.net/reportsvc/
 
 **QueryString Parameters:**
 
@@ -177,7 +176,7 @@ https://locationbank.net/reportingservice/api
 
 * Http Verb: GET
 * Headers: Content-Type: application/json
-* Http EndPoint: /Post  https://locationbank.net/reportingservice/api/)
+* Http EndPoint: /Post  https://api.locationbank.net/reportsvc/
 
 **QueryString Parameters:**
 
