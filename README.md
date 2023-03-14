@@ -31,26 +31,30 @@ https://api.locationbank.net/reportsvc/
 
 ```json
 [{
-        "clientID": "GUID:000000b00-0000-0000-8663-000000002d2b",
+       "clientID": "GUID:cc26d41d-b621-4963-a165-55d8b15a8329",
         "locationID": "",
-        "locationName": "",
-        "recordDate": "0001-01-01T00:00:00",
+        "locationName": "Nando's Wimbledon",
+        "recordDate": "2020-05-01T00:00:00",
         "latitude": 0,
         "longitude": 0,
         "locality": "",
         "storeCode": "",
         "subLocality": "",
         "country": "",
-        "administrativeArea": "England",
-        "discoverySearches": 401729,
-        "totalViews": 147814,
-        "totalActions": 225,
+        "administrativeArea": "",
+        "discoverySearches": 542,
+        "totalViews": 55,
+        "totalActions": 0,
         "totalSearches": 0,
-        "websiteActions": 29,
-        "directionsAction": 13,
+        "websiteActions": 0,
+        "directionsAction": 0,
         "phoneCallActions": 0,
-        "pagePlaceCheckInTotal": 8096,
-        "pageNegativeFeedback": 132
+        "pagePlaceCheckInTotal": 0,
+        "pageNegativeFeedback": 0,
+        "directSearches": 0,
+        "directionsActions": 0,
+        "likesTotal": 7845,
+        "likesAdd": 12
     }]
 ```
  
@@ -94,7 +98,16 @@ https://api.locationbank.net/reportsvc/
         "websiteActions": 4350,
         "totalSearches": 350299,
         "totalViews": 606678,
-        "brandedSearches": 110794
+        "brandedSearches": 110794,
+        "searchQueriesCount": 814,
+        "mapsMobileViews": 59,
+        "conversationActions": 0,
+        "businessBookingsActions": 0,
+        "searchDesktopViews": 569,
+        "searchMobileViews": 2154,
+        "mapsDesktopViews": 25,
+        "foodOrderActions": 0,
+        "foodMenuClicksActions": 0
     }]
 ```    
 
