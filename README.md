@@ -3,7 +3,7 @@ Sections
 
 1. Base API Url
 2. Facebook Analytics
-3. GMB Analytics
+3. GBP Analytics
 4. Yelp Analytics
 5. GmbMedia Analytics
 6. Post
@@ -55,7 +55,7 @@ https://api.locationbank.net/reportsvc/
 ```
  
  
-# 3 GMB Analytics 
+# 3 GBP Analytics 
 
 * Http Verb: GET
 * Headers: Content-Type: application/json
@@ -73,28 +73,46 @@ https://api.locationbank.net/reportsvc/
 
 ```json
 [{
-      "clientID": "GUID:000000b00-0000-0000-8663-000000002d2b",
-        "locationID": "",
-        "locationName": "",
-        "recordDate": "0001-01-01T00:00:00",
-        "subLocality": "",
+        "searchQueriesCount": 485,
+        "searchKeywordNo": 30,
+        "value": 485,
+        "threshold": 210,
+        "searchKeyword": "",
+        "locationId": "00000000-0000-0000-0000-000000000000",
+        "clientId": "67b9c5e4-6ddf-4856-b3c0-cf27cfe53255",
+        "recordDate": "2024-04-01T00:00:00",
         "storeCode": "",
+        "locationName": "Nando's Ulundi",
+        "administrativeArea": "",
+        "subLocality": "",
         "locality": "",
         "country": "",
-        "administrativeArea": "Ireland",
-        "latitude": 0,
-        "longitude": 0,
-        "directSearches": 107246,
-        "directionsAction": 4290,
-        "discoverySearches": 132259,
-        "mapsViews": 482510,
-        "phoneCallActions": 4138,
-        "searchViews": 124168,
-        "totalActions": 12778,
-        "websiteActions": 4350,
-        "totalSearches": 350299,
-        "totalViews": 606678,
-        "brandedSearches": 110794
+        "latitude": 0.0,
+        "longitude": 0.0,
+        "totalSearches": 347,
+        "directSearches": 0,
+        "discoverySearches": 0,
+        "brandedSearches": 0,
+        "totalViews": 1003,
+        "searchViews": 347,
+        "searchDesktopViews": 55,
+        "searchMobileViews": 292,
+        "mapsViews": 656,
+        "mapsDesktopViews": 23,
+        "mapsMobileViews": 633,
+        "totalActions": 345,
+        "websiteActions": 16,
+        "directionsActions": 71,
+        "phoneCallActions": 253,
+        "conversationActions": 0,
+        "businessBookingsActions": 0,
+        "foodOrderActions": 0,
+        "foodMenuClicksActions": 5,
+        "id": "00000000-0000-0000-0000-000000000000",
+        "version": 0,
+        "created": "0001-01-01T00:00:00",
+        "modified": "0001-01-01T00:00:00",
+        "isDeleted": false
     }]
 ```    
 
