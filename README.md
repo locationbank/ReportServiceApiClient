@@ -5,8 +5,7 @@ Sections
 2. Facebook Analytics
 3. GBP Analytics
 4. Yelp Analytics
-5. GmbMedia Analytics
-6. Post
+5. Post
 
 
 # 1 Base API Url
@@ -153,44 +152,7 @@ https://api.locationbank.net/reportsvc/
     }]
 ```    
 
-# 5 GMB media Analytics
-
-* Http Verb: GET
-* Headers: Content-Type: application/json
-* Http EndPoint: /Analytics/GmbMedia  https://api.locationbank.net/reportsvc/
-
-**QueryString Parameters:**
-
-    ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
-                  Report types are case sensitive - required)
-    FromDate: 2020-09-01T17:16:40 (DateTime - required)
-    ToDate: 2020-09-29T17:16:40 (DateTime - required)
-
-**Response Json Body**
-
-```json
-[{
-        "clientID": "GUID:000000b00-0000-0000-8663-000000002d2b",
-        "locationID": "",
-        "gmbName": "",
-        "mediaName": null,
-        "createTime": "0001-01-01T00:00:00",
-        "isCustomer": false,
-        "isDeleted": false,
-        "country": "",
-        "locationName": "",
-        "locality": "",
-        "subLocality": "",
-        "administrativeArea": "Wales",
-        "viewCount": 555642775,
-        "viewCountCustomer": 490704768,
-        "viewCountMedia": 64938007
-    }]
-```    
-
-
-# 6 Post
+# 5 Post
 
 * Http Verb: GET
 * Headers: Content-Type: application/json
