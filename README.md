@@ -113,18 +113,18 @@ https://api.locationbank.net/reportsvc/
         "modified": "0001-01-01T00:00:00",
         "isDeleted": false
     }]
-```    
+```
 
-# 4 Yelp Analytics
+# 4 GBP Search Keywords 
 
 * Http Verb: GET
 * Headers: Content-Type: application/json
-* Http EndPoint: /Analytics/Yelp  https://api.locationbank.net/reportsvc/
+* Http EndPoint: /Analytics/Google  https://api.locationbank.net/reportsvc/
 
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+    ReportType: (string - "SearchKeyword"
                   Report types are case sensitive - required)
     FromDate: 2020-09-01T17:16:40 (DateTime - required)
     ToDate: 2020-09-29T17:16:40 (DateTime - required)
@@ -132,25 +132,44 @@ https://api.locationbank.net/reportsvc/
 **Response Json Body**
 
 ```json
-[{
-        "clientID": "GUID:000000b00-0000-0000-8663-000000002d2b",
-        "locationID": "",
-        "locationName": "",
-        "recordDate": "0001-01-01T00:00:00",
-        "country": "",
-        "administrativeArea": "England",
-        "locality": "",
-        "storeCode": "",
-        "subLocality": "",
-        "latitude": 0,
-        "longitude": 0,
-        "totalViews": 722,
-        "totalActions": 49,
-        "websiteActions": 19,
-        "directionsAction": 22,
-        "phoneCallActions": 8
-    }]
-```    
+[ {
+    "clientID": "",
+    "locationID": "",
+    "locationName": "",
+    "recordDate": "2024-09-01T00:00:00",
+    "subLocality": "",
+    "storeCode": "",
+    "locality": "",
+    "country": "",
+    "administrativeArea": "",
+    "latitude": 0,
+    "longitude": 0,
+    "directSearches": 0,
+    "directionsActions": 0,
+    "discoverySearches": 0,
+    "mapsViews": 0,
+    "phoneCallActions": 0,
+    "searchViews": 0,
+    "totalActions": 0,
+    "websiteActions": 0,
+    "totalSearches": 0,
+    "totalViews": 0,
+    "brandedSearches": 0,
+    "value": 0,
+    "threshold": 0,
+    "searchQueriesCount": 236618,
+    "mapsMobileViews": 0,
+    "conversationActions": 0,
+    "businessBookingsActions": 0,
+    "searchDesktopViews": 0,
+    "searchMobileViews": 0,
+    "mapsDesktopViews": 0,
+    "foodOrderActions": 0,
+    "foodMenuClicksActions": 0,
+    "searchKeywordNo": 0,
+    "searchKeyword": "nandos"
+  }]
+``` 
 
 # 5 Post
 
