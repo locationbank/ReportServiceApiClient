@@ -4,7 +4,7 @@ Sections
 1. Base API Url
 2. Facebook Analytics
 3. GBP Analytics
-4. Yelp Analytics
+4. GBP Search Keywords
 5. Post
 
 
