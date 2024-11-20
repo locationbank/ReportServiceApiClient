@@ -6,6 +6,8 @@ Sections
 3. GBP Analytics
 4. GBP Search Keywords
 5. Post
+6. Bing Analytics
+7. Apple Analytics
 
 
 # 1 Base API Url
@@ -224,4 +226,131 @@ https://api.locationbank.net/reportsvc/
     "FBAngerReactions": "0",
     "FBLoveReactions": "0"
     }]
-```    
+```
+# 6 Bing Analytics 
+
+* Http Verb: GET
+* Headers: Content-Type: application/json
+* Http EndPoint: /Analytics/Bing  https://api.locationbank.net/reportsvc/
+
+**QueryString Parameters:**
+
+    ClientID: (string - Unique client id for every client - required)
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+                  Report types are case sensitive - required)
+    FromDate: 2020-09-01T17:16:40 (DateTime - required)
+    ToDate: 2020-09-29T17:16:40 (DateTime - required)
+
+**Response Json Body**
+
+```json
+[{
+        "locationId": "1ba69757-f901-4bfb-956f-cc40103c5f80",
+        "clientId": "67b9c5e4-6ddf-4856-b3c0-cf27cfe53255",
+        "recordDate": "2024-10-01T00:00:00",
+        "storeCode": "",
+        "locationName": "Nando's Grassy Park Drive Thru",
+        "administrativeArea": "",
+        "subLocality": "",
+        "locality": "",
+        "country": "",
+        "latitude": 0,
+        "longitude": 0,
+        "bingTotalImpressions": 4,
+        "bingSearchImpressions": 4,
+        "bingSearchDesktop": 0,
+        "bingSearchMobile": 4,
+        "bingMapsImpressions": 0,
+        "bingMapsDesktop": 0,
+        "bingMapsMobile": 0,
+        "bingTotalClicks": 0,
+        "bingCalls": 0,
+        "bingCallsSearchDesktop": 0,
+        "bingCallsSearchMobile": 0,
+        "bingCallsMapsDesktop": 0,
+        "bingCallsMapsMobile": 0,
+        "bingDirections": 0,
+        "bingDirectionsSearchDesktop": 0,
+        "bingDirectionsSearchMobile": 0,
+        "bingDirectionsMapsDesktop": 0,
+        "bingDirectionsMapsMobile": 0,
+        "bingWebsite": 0,
+        "bingWebsiteSearchDesktop": 0,
+        "bingWebsiteSearchMobile": 0,
+        "bingWebsiteMapsDesktop": 0,
+        "bingWebsiteMapsMobile": 0,
+        "bingFoodMenu": 0,
+        "bingFoodMenuSearchDesktop": 0,
+        "bingFoodMenuSearchMobile": 0,
+        "bingFoodMenuMapsDesktop": 0,
+        "bingFoodMenuMapsMobile": 0,
+        "bingOrderOnline": 0,
+        "bingOrderOnlineSearchDesktop": 0,
+        "bingOrderOnlineSearchMobile": 0,
+        "bingOrderOnlineMapsDesktop": 0,
+        "bingOrderOnlineMapsMobile": 0
+    }]
+```
+# 7 Apple Analytics 
+
+* Http Verb: GET
+* Headers: Content-Type: application/json
+* Http EndPoint: /Analytics/Apple  https://api.locationbank.net/reportsvc/
+
+**QueryString Parameters:**
+
+    ClientID: (string - Unique client id for every client - required)
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+                  Report types are case sensitive - required)
+    FromDate: 2020-09-01T17:16:40 (DateTime - required)
+    ToDate: 2020-09-29T17:16:40 (DateTime - required)
+
+**Response Json Body**
+
+```json
+[{
+      "AppleLocationId": "00000000-0000-0000-0000-000000000000",
+      "AppleClientId": "00000000-0000-0000-0000-000000000000",
+      "AppleRecordDate": "0001-01-01T00:00:00Z",
+      "AppleStoreCode": "",
+      "AppleLocationName": "",
+      "AppleAdministrativeArea": "",
+      "AppleSubLocality": "",
+      "AppleLocality": "",
+      "AppleCountry": "",
+      "AppleLatitude": 0.0,
+      "AppleLongitude": 0.0,
+      "AppleSearchTapsTotal": 0,
+      "AppleSearchTaps": 0,
+      "AppleSearchNameTaps": 0,
+      "AppleSearchCategoryTaps": 0,
+      "AppleSearchOtherTaps": 0,
+      "AppleSpatialSearchTaps": 0,
+      "AppleSpatialDirectionTaps": 0,
+      "ApplePlaceCardTotalClicks": 0,
+      "ApplePlaceCardJoinWaitlist": 0,
+      "ApplePlaceCardOrderDelivery": 0,
+      "ApplePlaceCardOrderFood": 0,
+      "ApplePlaceCardOrderTakeout": 0,
+      "ApplePlaceCardPickup": 0,
+      "ApplePlaceCardReserveParking": 0,
+      "ApplePlaceCardReserveTable": 0,
+      "ApplePlaceCardScheduleAppointment": 0,
+      "ApplePlaceCard": 0,
+      "ApplePlaceCardCallTaps": 0,
+      "ApplePlaceCardDirectionTaps": 0,
+      "ApplePlaceCardOrderTaps": 0,
+      "ApplePlaceCardShareTaps": 0,
+      "ApplePlaceCardShowcaseTaps": 0,
+      "ApplePlaceCardWebsiteTaps": 0,
+      "ApplePlaceCardViews": 0,
+      "ApplePlaceCardViewAvailability": 0,
+      "ApplePlaceCardMenuViews": 0,
+      "ApplePlaceCardViewPricing": 0,
+      "ApplePlaceCardGalleryEngagement": 0,
+      "ApplePlaceCardTapBuyTickets": 0,
+      "AppleTotalLocationSearchTaps": 0,
+      "AppleTotalPlaceCardClicks": 0,
+      "AppleTotalSpecialLocationSearch": 0
+    }]
+```  
