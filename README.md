@@ -8,6 +8,8 @@ Sections
 5. Post
 6. Bing Analytics
 7. Apple Analytics
+8. Store Locator Location Page Analytics
+9. Store Locator Main Page Analytics
 
 
 # 1 Base API Url
@@ -353,4 +355,86 @@ https://api.locationbank.net/reportsvc/
       "AppleTotalPlaceCardClicks": 0,
       "AppleTotalSpecialLocationSearch": 0
     }]
-```  
+```
+
+# 8 Store Locator Location Page Analytics 
+
+* Http Verb: GET
+* Headers: Content-Type: application/json
+* Http EndPoint: /Analytics/StoreLocator/LocationPage  https://api.locationbank.net/reportsvc/
+
+**QueryString Parameters:**
+
+    ClientID: (string - Unique client id for every client - required)
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData"
+                  Report types are case sensitive - required)
+    FromDate: 2020-09-01T17:16:40 (DateTime - required)
+    ToDate: 2020-09-29T17:16:40 (DateTime - required)
+
+**Response Json Body**
+
+```json
+[{
+        "slLocationId": "00000000-0000-0000-0000-000000000000",
+        "slClientId": "67b9c5e4-6ddf-4856-b3c0-cf27cfe53255",
+        "slRecordDate": "0001-01-01T00:00:00+00:00",
+        "slStoreCode": "",
+        "slLocationName": "",
+        "slAdministrativeArea": "",
+        "slSubLocality": "",
+        "slLocality": "",
+        "slCountry": "ZA",
+        "slCustomType": "delivery",
+        "slContext": null,
+        "slDirectionsActions": 0,
+        "slPhoneCallActions": 0,
+        "slPostActions": 0,
+        "slMediaActions": 0,
+        "slSocialProfileActions": 0,
+        "slReviewActions": 0,
+        "slFirstPartyReviewActions": 0,
+        "slView": 0,
+        "slCustomActions": 298
+    }]
+``` 
+# 9 Store Locator Main Page Analytics
+
+* Http Verb: GET
+* Headers: Content-Type: application/json
+* Http EndPoint: /Analytics/StoreLocator/MainPage  https://api.locationbank.net/reportsvc/
+
+**QueryString Parameters:**
+
+    ClientID: (string - Unique client id for every client - required)
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData"
+                  Report types are case sensitive - required)
+    FromDate: 2020-09-01T17:16:40 (DateTime - required)
+    ToDate: 2020-09-29T17:16:40 (DateTime - required)
+
+**Response Json Body**
+
+```json
+[{
+        "slLocationId": "00000000-0000-0000-0000-000000000000",
+        "slClientId": "67b9c5e4-6ddf-4856-b3c0-cf27cfe53255",
+        "slRecordDate": "0001-01-01T00:00:00+00:00",
+        "slStoreCode": "",
+        "slLocationName": "",
+        "slAdministrativeArea": "",
+        "slSubLocality": "",
+        "slLocality": "",
+        "slCountry": "ZA",
+        "slCustomType": "",
+        "slContext": null,
+        "slDirectionsActions": 0,
+        "slPhoneCallActions": 0,
+        "slPostActions": 0,
+        "slMediaActions": 0,
+        "slSocialProfileActions": 0,
+        "slReviewActions": 0,
+        "slFirstPartyReviewActions": 0,
+        "slView": 578,
+        "slCustomActions": 0
+    }]
+```
+
