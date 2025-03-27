@@ -25,7 +25,7 @@ https://api.locationbank.net/reportsvc/
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries", "LocationDailySeries"
                   Report types are case sensitive - required)
     FromDate: 2020-09-01T17:16:40 (DateTime - required)
     ToDate: 2020-09-29T17:16:40 (DateTime - required)
@@ -53,7 +53,11 @@ https://api.locationbank.net/reportsvc/
         "directionsAction": 13,
         "phoneCallActions": 0,
         "pagePlaceCheckInTotal": 8096,
-        "pageNegativeFeedback": 132
+        "pageNegativeFeedback": 132,
+        "directSearches": 0,
+        "directionsActions": 0,
+        "likesTotal": 61,
+        "likesAdd": 0
     }]
 ```
  
@@ -67,7 +71,7 @@ https://api.locationbank.net/reportsvc/
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries", "LocationDailySeries"
                   Report types are case sensitive - required)
     FromDate: 2020-09-01T17:16:40 (DateTime - required)
     ToDate: 2020-09-29T17:16:40 (DateTime - required)
@@ -76,46 +80,36 @@ https://api.locationbank.net/reportsvc/
 
 ```json
 [{
-        "searchQueriesCount": 485,
-        "searchKeywordNo": 30,
-        "value": 485,
-        "threshold": 210,
-        "searchKeyword": "",
-        "locationId": "00000000-0000-0000-0000-000000000000",
-        "clientId": "67b9c5e4-6ddf-4856-b3c0-cf27cfe53255",
-        "recordDate": "2024-04-01T00:00:00",
-        "storeCode": "",
-        "locationName": "Nando's Ulundi",
-        "administrativeArea": "",
-        "subLocality": "",
-        "locality": "",
-        "country": "",
-        "latitude": 0.0,
-        "longitude": 0.0,
-        "totalSearches": 347,
+        "clientID": "67b9c5e4-6ddf-4856-b3c0-cf27cfe53255",
+        "locationID": "GUID:208fef96-92d0-48d4-8dbf-5fbe5618f81b",
+        "locationName": "Nando's Krugersdorp Drive Thru",
+        "recordDate": "2024-07-01T00:00:00",
+        "storeCode": "KRG",
+        "locality": "Krugersdorp",
+        "administrativeArea": "Gauteng",
         "directSearches": 0,
+        "directionsActions": 40,
         "discoverySearches": 0,
+        "mapsViews": 114,
+        "phoneCallActions": 27,
+        "searchViews": 338,
+        "totalActions": 72,
+        "websiteActions": 5,
+        "totalSearches": 338,
+        "totalViews": 452,
         "brandedSearches": 0,
-        "totalViews": 1003,
-        "searchViews": 347,
-        "searchDesktopViews": 55,
-        "searchMobileViews": 292,
-        "mapsViews": 656,
-        "mapsDesktopViews": 23,
-        "mapsMobileViews": 633,
-        "totalActions": 345,
-        "websiteActions": 16,
-        "directionsActions": 71,
-        "phoneCallActions": 253,
+        "value": 0,
+        "threshold": 0,
+        "searchQueriesCount": 1745,
+        "mapsMobileViews": 102,
         "conversationActions": 0,
         "businessBookingsActions": 0,
+        "searchDesktopViews": 74,
+        "searchMobileViews": 264,
+        "mapsDesktopViews": 12,
         "foodOrderActions": 0,
-        "foodMenuClicksActions": 5,
-        "id": "00000000-0000-0000-0000-000000000000",
-        "version": 0,
-        "created": "0001-01-01T00:00:00",
-        "modified": "0001-01-01T00:00:00",
-        "isDeleted": false
+        "foodMenuClicksActions": 0,
+        "searchKeywordNo": 5
     }]
 ```
 
@@ -184,7 +178,7 @@ https://api.locationbank.net/reportsvc/
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries", "LocationDailySeries"
                   Report types are case sensitive - required)
     FromDate: 2020-07-01T00:00:00 (DateTime - required)
     ToDate: 2020-09-29T23:59:59 (DateTime - required)
@@ -238,7 +232,7 @@ https://api.locationbank.net/reportsvc/
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries", "LocationDailySeries"
                   Report types are case sensitive - required)
     FromDate: 2020-09-01T17:16:40 (DateTime - required)
     ToDate: 2020-09-29T17:16:40 (DateTime - required)
@@ -302,7 +296,7 @@ https://api.locationbank.net/reportsvc/
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries", "LocationDailySeries"
                   Report types are case sensitive - required)
     FromDate: 2020-09-01T17:16:40 (DateTime - required)
     ToDate: 2020-09-29T17:16:40 (DateTime - required)
@@ -366,7 +360,7 @@ https://api.locationbank.net/reportsvc/
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData"
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries", "LocationDailySeries"
                   Report types are case sensitive - required)
     FromDate: 2020-09-01T17:16:40 (DateTime - required)
     ToDate: 2020-09-29T17:16:40 (DateTime - required)
@@ -406,7 +400,7 @@ https://api.locationbank.net/reportsvc/
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData"
+    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
                   Report types are case sensitive - required)
     FromDate: 2020-09-01T17:16:40 (DateTime - required)
     ToDate: 2020-09-29T17:16:40 (DateTime - required)
