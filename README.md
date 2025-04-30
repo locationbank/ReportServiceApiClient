@@ -45,19 +45,13 @@ https://api.locationbank.net/reportsvc/
         "subLocality": "",
         "country": "",
         "administrativeArea": "England",
-        "discoverySearches": 401729,
-        "totalViews": 147814,
-        "totalActions": 225,
-        "totalSearches": 0,
-        "websiteActions": 29,
-        "directionsAction": 13,
-        "phoneCallActions": 0,
-        "pagePlaceCheckInTotal": 8096,
-        "pageNegativeFeedback": 132,
-        "directSearches": 0,
-        "directionsActions": 0,
-        "likesTotal": 61,
-        "likesAdd": 0
+        "totalViews": 23664,
+        "totalImpressions": 2707406,
+        "totalClicks": 0,
+        "totalLikes": 199,
+        "totalFans": 556083,
+        "totalReach": 0,
+        "totalEngagement": 83243
     }]
 ```
  
