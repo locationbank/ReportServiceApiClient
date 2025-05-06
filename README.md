@@ -394,7 +394,7 @@ https://api.locationbank.net/reportsvc/
 **QueryString Parameters:**
 
     ClientID: (string - Unique client id for every client - required)
-    ReportType: (string - Supported report types are "Location", "SubLocality", "Locality", "AdministrativeArea", "Country", "MonthlyData", "DailySeries"
+    ReportType: (string - Supported report types are "MonthlyData", "DailySeries"
                   Report types are case sensitive - required)
     FromDate: 2020-09-01T17:16:40 (DateTime - required)
     ToDate: 2020-09-29T17:16:40 (DateTime - required)
